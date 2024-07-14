@@ -1,732 +1,1358 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>JobEntry - Job Portal Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+<!-- Meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="keywords" content="MediaCenter, Template, eCommerce">
+<meta name="robots" content="all">
+<title>Reliance Jewels</title>
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+<!--favicon icon-->
+<link rel="icon" type="image/png" href="images/favicon.png">
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
-    
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Customizable CSS -->
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.transitions.css">
+<link rel="stylesheet" href="css/bootstrap-select.min.css">
+<link rel="stylesheet" href="css/stylesheet.css">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Icons/Glyphs -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Barlow:200,300,300i,400,400i,500,500i,600,700,800" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
+<body class="cnt-home">
 
-<body>
-    <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+<!-- ============================================== HEADER ============================================== -->
+<header class="header-style-1"> 
+    
+<!-- ============================================== TOP MENU ============================================== -->
+  <div class="top-bar animate-dropdown">
+    <div class="container">
+      <div class="header-top-inner">
+        <div class="cnt-block cnt_left">
+          <ul class="list-unstyled list-inline">
+            <li><a href="#"><i class="top_header_icon store_icon"></i><span>Store Locater</span></a></li>
+            <li><a href="tel:1800 102 7382"><i class="top_header_icon phone_icon"></i><span>1800 102 7382</span></a></li>
+          </ul>
         </div>
-        <!-- Spinner End -->
 
+        <div class="cnt-block">
+          <ul class="list-unstyled list-inline">
+            <li><a href="#"><i class="top_header_icon order_icon"></i><span>Order</span></a></li>  
+            <li><a href="#"><i class="top_header_icon mycart_icon"></i><span>My Cart</span></a></li>  
+            <li><a href="#"><i class="top_header_icon logsign_icon"></i><span>Login / Signup</span></a></li>
+          </ul>
 
-        <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
-                <h1 class="m-0 text-primary">JobEntry</h1>
-            </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jobs</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="job-list.html" class="dropdown-item">Job List</a>
-                            <a href="job-detail.html" class="dropdown-item">Job Detail</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="category.html" class="dropdown-item">Job Category</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
-                <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Post A Job<i class="fa fa-arrow-right ms-3"></i></a>
-            </div>
-        </nav>
-        <!-- Navbar End -->
-
-
-        <!-- Carousel Start -->
-        <div class="container-fluid p-0">
-            <div class="owl-carousel header-carousel position-relative">
-                <div class="owl-carousel-item position-relative">
-                    <img class="img-fluid" src="img/carousel-1.jpg" alt="">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(43, 57, 64, .5);">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <h1 class="display-3 text-white animated slideInDown mb-4">Find The Perfect Job That You Deserved</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                    <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Search A Job</a>
-                                    <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Find A Talent</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="owl-carousel-item position-relative">
-                    <img class="img-fluid" src="img/carousel-2.jpg" alt="">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(43, 57, 64, .5);">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <h1 class="display-3 text-white animated slideInDown mb-4">Find The Best Startup Job That Fit You</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                    <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Search A Job</a>
-                                    <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Find A Talent</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-        <!-- Carousel End -->
+       
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
 
-
-        <!-- Search Start -->
-        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
-            <div class="container">
-                <div class="row g-2">
-                    <div class="col-md-10">
-                        <div class="row g-2">
-                            <div class="col-md-4">
-                                <input type="text" class="form-control border-0" placeholder="Keyword" />
-                            </div>
-                            <div class="col-md-4">
-                                <select class="form-select border-0">
-                                    <option selected>Category</option>
-                                    <option value="1">Category 1</option>
-                                    <option value="2">Category 2</option>
-                                    <option value="3">Category 3</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
-                                <select class="form-select border-0">
-                                    <option selected>Location</option>
-                                    <option value="1">Location 1</option>
-                                    <option value="2">Location 2</option>
-                                    <option value="3">Location 3</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-dark border-0 w-100">Search</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Search End -->
-
-
-        <!-- Category Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Explore By Category</h1>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="cat-item rounded p-4" href="">
-                            <i class="fa fa-3x fa-mail-bulk text-primary mb-4"></i>
-                            <h6 class="mb-3">Marketing</h6>
-                            <p class="mb-0">123 Vacancy</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="cat-item rounded p-4" href="">
-                            <i class="fa fa-3x fa-headset text-primary mb-4"></i>
-                            <h6 class="mb-3">Customer Service</h6>
-                            <p class="mb-0">123 Vacancy</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="cat-item rounded p-4" href="">
-                            <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
-                            <h6 class="mb-3">Human Resource</h6>
-                            <p class="mb-0">123 Vacancy</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <a class="cat-item rounded p-4" href="">
-                            <i class="fa fa-3x fa-tasks text-primary mb-4"></i>
-                            <h6 class="mb-3">Project Management</h6>
-                            <p class="mb-0">123 Vacancy</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="cat-item rounded p-4" href="">
-                            <i class="fa fa-3x fa-chart-line text-primary mb-4"></i>
-                            <h6 class="mb-3">Business Development</h6>
-                            <p class="mb-0">123 Vacancy</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="cat-item rounded p-4" href="">
-                            <i class="fa fa-3x fa-hands-helping text-primary mb-4"></i>
-                            <h6 class="mb-3">Sales & Communication</h6>
-                            <p class="mb-0">123 Vacancy</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="cat-item rounded p-4" href="">
-                            <i class="fa fa-3x fa-book-reader text-primary mb-4"></i>
-                            <h6 class="mb-3">Teaching & Education</h6>
-                            <p class="mb-0">123 Vacancy</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <a class="cat-item rounded p-4" href="">
-                            <i class="fa fa-3x fa-drafting-compass text-primary mb-4"></i>
-                            <h6 class="mb-3">Design & Creative</h6>
-                            <p class="mb-0">123 Vacancy</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Category End -->
-
-
-        <!-- About Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="row g-0 about-bg rounded overflow-hidden">
-                            <div class="col-6 text-start">
-                                <img class="img-fluid w-100" src="img/about-1.jpg">
-                            </div>
-                            <div class="col-6 text-start">
-                                <img class="img-fluid" src="img/about-2.jpg" style="width: 85%; margin-top: 15%;">
-                            </div>
-                            <div class="col-6 text-end">
-                                <img class="img-fluid" src="img/about-3.jpg" style="width: 85%;">
-                            </div>
-                            <div class="col-6 text-end">
-                                <img class="img-fluid w-100" src="img/about-4.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <h1 class="mb-4">We Help To Get The Best Job And Find A Talent</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Tempor erat elitr rebum at clita</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Aliqu diam amet diam et eos</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Clita duo justo magna dolore erat amet</p>
-                        <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Jobs Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Job Listing</h1>
-                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.3s">
-                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
-                        <li class="nav-item">
-                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
-                                <h6 class="mt-n1 mb-0">Featured</h6>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
-                                <h6 class="mt-n1 mb-0">Full Time</h6>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
-                                <h6 class="mt-n1 mb-0">Part Time</h6>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="job-item p-4 mb-4">
-                                <div class="row g-4">
-                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-1.jpg" alt="" style="width: 80px; height: 80px;">
-                                        <div class="text-start ps-4">
-                                            <h5 class="mb-3">Software Engineer</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                        <div class="d-flex mb-3">
-                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                            <a class="btn btn-primary" href="">Apply Now</a>
-                                        </div>
-                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-item p-4 mb-4">
-                                <div class="row g-4">
-                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
-                                        <div class="text-start ps-4">
-                                            <h5 class="mb-3">Marketing Manager</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                        <div class="d-flex mb-3">
-                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                            <a class="btn btn-primary" href="">Apply Now</a>
-                                        </div>
-                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-item p-4 mb-4">
-                                <div class="row g-4">
-                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-3.jpg" alt="" style="width: 80px; height: 80px;">
-                                        <div class="text-start ps-4">
-                                            <h5 class="mb-3">Product Designer</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                        <div class="d-flex mb-3">
-                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                            <a class="btn btn-primary" href="">Apply Now</a>
-                                        </div>
-                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-item p-4 mb-4">
-                                <div class="row g-4">
-                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-4.jpg" alt="" style="width: 80px; height: 80px;">
-                                        <div class="text-start ps-4">
-                                            <h5 class="mb-3">Creative Director</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                        <div class="d-flex mb-3">
-                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                            <a class="btn btn-primary" href="">Apply Now</a>
-                                        </div>
-                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-item p-4 mb-4">
-                                <div class="row g-4">
-                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-5.jpg" alt="" style="width: 80px; height: 80px;">
-                                        <div class="text-start ps-4">
-                                            <h5 class="mb-3">Wordpress Developer</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                        <div class="d-flex mb-3">
-                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                            <a class="btn btn-primary" href="">Apply Now</a>
-                                        </div>
-                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
-                        </div>
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="job-item p-4 mb-4">
-                                <div class="row g-4">
-                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-1.jpg" alt="" style="width: 80px; height: 80px;">
-                                        <div class="text-start ps-4">
-                                            <h5 class="mb-3">Software Engineer</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                        <div class="d-flex mb-3">
-                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                            <a class="btn btn-primary" href="">Apply Now</a>
-                                        </div>
-                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-item p-4 mb-4">
-                                <div class="row g-4">
-                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
-                                        <div class="text-start ps-4">
-                                            <h5 class="mb-3">Marketing Manager</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                        <div class="d-flex mb-3">
-                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                            <a class="btn btn-primary" href="">Apply Now</a>
-                                        </div>
-                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-item p-4 mb-4">
-                                <div class="row g-4">
-                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-3.jpg" alt="" style="width: 80px; height: 80px;">
-                                        <div class="text-start ps-4">
-                                            <h5 class="mb-3">Product Designer</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                        <div class="d-flex mb-3">
-                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                            <a class="btn btn-primary" href="">Apply Now</a>
-                                        </div>
-                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-item p-4 mb-4">
-                                <div class="row g-4">
-                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-4.jpg" alt="" style="width: 80px; height: 80px;">
-                                        <div class="text-start ps-4">
-                                            <h5 class="mb-3">Creative Director</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                        <div class="d-flex mb-3">
-                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                            <a class="btn btn-primary" href="">Apply Now</a>
-                                        </div>
-                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-item p-4 mb-4">
-                                <div class="row g-4">
-                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-5.jpg" alt="" style="width: 80px; height: 80px;">
-                                        <div class="text-start ps-4">
-                                            <h5 class="mb-3">Wordpress Developer</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                        <div class="d-flex mb-3">
-                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                            <a class="btn btn-primary" href="">Apply Now</a>
-                                        </div>
-                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
-                        </div>
-                        <div id="tab-3" class="tab-pane fade show p-0">
-                            <div class="job-item p-4 mb-4">
-                                <div class="row g-4">
-                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-1.jpg" alt="" style="width: 80px; height: 80px;">
-                                        <div class="text-start ps-4">
-                                            <h5 class="mb-3">Software Engineer</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                        <div class="d-flex mb-3">
-                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                            <a class="btn btn-primary" href="">Apply Now</a>
-                                        </div>
-                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-item p-4 mb-4">
-                                <div class="row g-4">
-                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
-                                        <div class="text-start ps-4">
-                                            <h5 class="mb-3">Marketing Manager</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                        <div class="d-flex mb-3">
-                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                            <a class="btn btn-primary" href="">Apply Now</a>
-                                        </div>
-                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-item p-4 mb-4">
-                                <div class="row g-4">
-                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-3.jpg" alt="" style="width: 80px; height: 80px;">
-                                        <div class="text-start ps-4">
-                                            <h5 class="mb-3">Product Designer</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                        <div class="d-flex mb-3">
-                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                            <a class="btn btn-primary" href="">Apply Now</a>
-                                        </div>
-                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-item p-4 mb-4">
-                                <div class="row g-4">
-                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-4.jpg" alt="" style="width: 80px; height: 80px;">
-                                        <div class="text-start ps-4">
-                                            <h5 class="mb-3">Creative Director</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                        <div class="d-flex mb-3">
-                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                            <a class="btn btn-primary" href="">Apply Now</a>
-                                        </div>
-                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-item p-4 mb-4">
-                                <div class="row g-4">
-                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-5.jpg" alt="" style="width: 80px; height: 80px;">
-                                        <div class="text-start ps-4">
-                                            <h5 class="mb-3">Wordpress Developer</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                                        <div class="d-flex mb-3">
-                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                            <a class="btn btn-primary" href="">Apply Now</a>
-                                        </div>
-                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Jobs End -->
-
-
-        <!-- Testimonial Start -->
-        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container">
-                <h1 class="text-center mb-5">Our Clients Say!!!</h1>
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item bg-light rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-light rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-light rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-light rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
+  <!-- ============================================== TOP MENU : END ============================================== -->
+  <div class="main-header">
+    <div class="container">
+      <div class="row">
         
-
-        <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Company</h5>
-                        <a class="btn btn-link text-white-50" href="">About Us</a>
-                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                        <a class="btn btn-link text-white-50" href="">Our Services</a>
-                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Quick Links</h5>
-                        <a class="btn btn-link text-white-50" href="">About Us</a>
-                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                        <a class="btn btn-link text-white-50" href="">Our Services</a>
-                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Contact</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Newsletter</h5>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                            </br>Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 logo-holder"> 
+          <div class="logo"> <a href="index.html"> <img src="images/logo.png" alt="logo"> </a> </div>
         </div>
-        <!-- Footer End -->
+        
+        <div class="col-md-offset-2 col-lg-7 col-md-6 col-sm-8 col-xs-12 top-search-holder"> 
+          <div class="search-area">
+            <form>
+              <div class="control-group">               
+                <input class="search-field" placeholder="Search Jewellery" />
+                <a class="search-button" href="#" ></a> </div>
+            </form>
+          </div>
+          </div>
+	  <div>
+    </div>
+      </div>
+    </div>
+  </div>
+<!-- /.main-header --> 
+
+<!-- ============================================== NAVBAR ============================================== -->
+  <div class="header-nav animate-dropdown">
+    <div class="container">
+      <div class="yamm navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+       <button data-target="#mc-horizontal-menu-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button"> 
+       <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+        <div class="nav-bg-class">
+          <div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
+            <div class="nav-outer">
+              <ul class="nav navbar-nav">
+                
+                <li style="display: none;" class="dropdown"> <a href="#"><i class="icon fa fa-home" aria-hidden="true"></i>What’s Trending</a> </li>
+
+                <li> <a href="#" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">What’s Trending</a></li>
+
+                <li class="dropdown yamm mega-menu"> <a href="#" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Gold Jewelry</a>
+                  <ul class="dropdown-menu container">
+                    <li>
+                      <div class="yamm-content">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Men</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Rings</a></li>
+                              <li><a href="#">Necklace</a></li>
+                              <li><a href="#">Pendants</a></li>
+                              <li><a href="#">Accessories</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+                          
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Women</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Bangle</a></li>
+                              <li><a href="#">Rings</a></li>
+                              <li><a href="#">Earrings</a></li>
+                              <li><a href="#">Nose Pins</a></li>
+                              <li><a href="#">Necklace</a></li>
+                              <li><a href="#">Pendants</a></li>
+                              <li><a href="#">Mangalsutras</a></li>
+                              <li><a href="#">Accessories</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+                          
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Kids</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Kada</a></li>
+                              <li><a href="#">Earrings</a></li>
+                              <li><a href="#">Pendants</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+
+						  
+                          <div class="col-xs-12 col-sm-6 col-menu banner-image"> <img class="img-responsive" src="images/gold1.jpg" alt=""> </div>
+                          <!-- /.yamm-content --> 
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown yamm mega-menu"> <a href="#" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Diamond Jewelry</a>
+                  <ul class="dropdown-menu container">
+                    <li>
+                      <div class="yamm-content">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Men</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Rings</a></li>
+                              <li><a href="#">Necklace</a></li>
+                              <li><a href="#">Pendants</a></li>
+                              <li><a href="#">Accessories</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+                          
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Women</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Bangle</a></li>
+                              <li><a href="#">Rings</a></li>
+                              <li><a href="#">Earrings</a></li>
+                              <li><a href="#">Nose Pins</a></li>
+                              <li><a href="#">Necklace</a></li>
+                              <li><a href="#">Pendants</a></li>
+                              <li><a href="#">Mangalsutras</a></li>
+                              <li><a href="#">Accessories</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+                          
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Kids</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Kada</a></li>
+                              <li><a href="#">Earrings</a></li>
+                              <li><a href="#">Pendants</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+
+						  
+                          <div class="col-xs-12 col-sm-6 col-menu banner-image"> <img class="img-responsive" src="images/Diamond1.jpg" alt=""> </div>
+                          <!-- /.yamm-content --> 
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown yamm mega-menu"> <a href="#" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Silver Idols</a>
+                  <ul class="dropdown-menu container">
+                    <li>
+                      <div class="yamm-content">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Men</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Rings</a></li>
+                              <li><a href="#">Necklace</a></li>
+                              <li><a href="#">Pendants</a></li>
+                              <li><a href="#">Accessories</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+                          
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Women</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Bangle</a></li>
+                              <li><a href="#">Rings</a></li>
+                              <li><a href="#">Earrings</a></li>
+                              <li><a href="#">Nose Pins</a></li>
+                              <li><a href="#">Necklace</a></li>
+                              <li><a href="#">Pendants</a></li>
+                              <li><a href="#">Mangalsutras</a></li>
+                              <li><a href="#">Accessories</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+                          
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Kids</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Kada</a></li>
+                              <li><a href="#">Earrings</a></li>
+                              <li><a href="#">Pendants</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+
+						  
+                          <div class="col-xs-12 col-sm-6 col-menu banner-image"> <img class="img-responsive" src="images/Silver.jpg" alt=""> </div>
+                          <!-- /.yamm-content --> 
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown yamm mega-menu"> <a href="#" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Showroom Jewellery </a>
+                  <ul class="dropdown-menu container">
+                    <li>
+                      <div class="yamm-content">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Men</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Rings</a></li>
+                              <li><a href="#">Necklace</a></li>
+                              <li><a href="#">Pendants</a></li>
+                              <li><a href="#">Accessories</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+                          
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Women</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Bangle</a></li>
+                              <li><a href="#">Rings</a></li>
+                              <li><a href="#">Earrings</a></li>
+                              <li><a href="#">Nose Pins</a></li>
+                              <li><a href="#">Necklace</a></li>
+                              <li><a href="#">Pendants</a></li>
+                              <li><a href="#">Mangalsutras</a></li>
+                              <li><a href="#">Accessories</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+                          
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Kids</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Kada</a></li>
+                              <li><a href="#">Earrings</a></li>
+                              <li><a href="#">Pendants</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+
+						  
+                          <div class="col-xs-12 col-sm-6 col-menu banner-image"> <img class="img-responsive" src="images/gold1.jpg" alt=""> </div>
+                          <!-- /.yamm-content --> 
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+                <li class="dropdown yamm mega-menu"> <a href="#" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Showroom Jewellery </a>
+                  <ul class="dropdown-menu container">
+                    <li>
+                      <div class="yamm-content">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Men</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Rings</a></li>
+                              <li><a href="#">Necklace</a></li>
+                              <li><a href="#">Pendants</a></li>
+                              <li><a href="#">Accessories</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+                          
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Women</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Bangle</a></li>
+                              <li><a href="#">Rings</a></li>
+                              <li><a href="#">Earrings</a></li>
+                              <li><a href="#">Nose Pins</a></li>
+                              <li><a href="#">Necklace</a></li>
+                              <li><a href="#">Pendants</a></li>
+                              <li><a href="#">Mangalsutras</a></li>
+                              <li><a href="#">Accessories</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+                          
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Kids</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Kada</a></li>
+                              <li><a href="#">Earrings</a></li>
+                              <li><a href="#">Pendants</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+
+						  
+                          <div class="col-xs-12 col-sm-6 col-menu banner-image"> <img class="img-responsive" src="images/gold1.jpg" alt=""> </div>
+                          <!-- /.yamm-content --> 
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li><li class="dropdown yamm mega-menu"> <a href="#" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Showroom Jewellery </a>
+                  <ul class="dropdown-menu container">
+                    <li>
+                      <div class="yamm-content">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Men</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Rings</a></li>
+                              <li><a href="#">Necklace</a></li>
+                              <li><a href="#">Pendants</a></li>
+                              <li><a href="#">Accessories</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+                          
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Women</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Bangle</a></li>
+                              <li><a href="#">Rings</a></li>
+                              <li><a href="#">Earrings</a></li>
+                              <li><a href="#">Nose Pins</a></li>
+                              <li><a href="#">Necklace</a></li>
+                              <li><a href="#">Pendants</a></li>
+                              <li><a href="#">Mangalsutras</a></li>
+                              <li><a href="#">Accessories</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+                          
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Kids</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Kada</a></li>
+                              <li><a href="#">Earrings</a></li>
+                              <li><a href="#">Pendants</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+
+						  
+                          <div class="col-xs-12 col-sm-6 col-menu banner-image"> <img class="img-responsive" src="images/gold1.jpg" alt=""> </div>
+                          <!-- /.yamm-content --> 
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li><li class="dropdown yamm mega-menu"> <a href="#" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Showroom Jewellery </a>
+                  <ul class="dropdown-menu container">
+                    <li>
+                      <div class="yamm-content">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Men</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Rings</a></li>
+                              <li><a href="#">Necklace</a></li>
+                              <li><a href="#">Pendants</a></li>
+                              <li><a href="#">Accessories</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+                          
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Women</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Bangle</a></li>
+                              <li><a href="#">Rings</a></li>
+                              <li><a href="#">Earrings</a></li>
+                              <li><a href="#">Nose Pins</a></li>
+                              <li><a href="#">Necklace</a></li>
+                              <li><a href="#">Pendants</a></li>
+                              <li><a href="#">Mangalsutras</a></li>
+                              <li><a href="#">Accessories</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+                          
+                          <div class="col-xs-12 col-sm-6 col-md-2 col-menu">
+                            <h2 class="title">Kids</h2>
+                            <ul class="links">
+                              <li><a href="#">Chain</a></li>
+                              <li><a href="#">Bracelet</a></li>
+                              <li><a href="#">Kada</a></li>
+                              <li><a href="#">Earrings</a></li>
+                              <li><a href="#">Pendants</a></li>
+                            </ul>
+                          </div>
+                          <!-- /.col -->
+
+						  
+                          <div class="col-xs-12 col-sm-6 col-menu banner-image"> <img class="img-responsive" src="images/gold1.jpg" alt=""> </div>
+                          <!-- /.yamm-content --> 
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+
+                <!-- <li class="dropdown  navbar-right special-menu"> <a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Today's Special Offer</a></a> </li> -->
+              </ul>
+             <div class="clearfix"></div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============================================== NAVBAR : END ============================================== -->
+</header>
+
+<!-- ============================================== HEADER : END ============================================== -->
+<div class="body-content outer-top-vs marginTop-0" id="top-banner-and-menu">
+
+    <!-- Banner Start -->
+    <div id="hero">
+      <div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
+        <div class="item" style="background-image: url(images/slide1.jpg);">
+        </div>
+        
+        <div class="item" style="background-image: url(images/slide2.jpg);">
+        </div>    
+        
+        <div class="item" style="background-image: url(images/slide3.jpg);">
+        </div>    
+
+      </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <div class="container">
+
+
+      <!-- New Product Start -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+           <div id="product-tabs-slider" class="scroll-tabs outer-top-vs nowLive">
+          <div class="more-info-tab clearfix ">
+            <h3 class="new-product-title pull-left">Featured Products</h3>
+            <!-- /.nav-tabs --> 
+          </div>
+
+          <div class="tab-content outer-top-xs">
+            <div class="tab-pane in active">
+              <div class="product-slider">
+                <div class="owl-carousel home-owl-carousel custom-carousel owl-theme">
+                  
+                  <div class="item item-carousel m-item">
+                    <div class="products">
+                      <div class="product">
+                        
+                        <div class="product-image">
+                          <div class="image"> 
+                            <a href="#">
+                               <img src="images/PIMAGES/ERGDR18KU.jpg" alt=""> 
+                                <img src="images/PIMAGES/ERGDR18KU.jpg" alt="" class="hover-image">
+                            </a> 
+                          </div>                         
+                        </div>
+                        
+                        <div class="product-info text-center">
+                          <h3 class="name"><a href="#">Reliance Jewels 22 Kt Gold Round Designed Hoops Earrings</a></h3>
+                          <!--  -->
+                          <div class="product-price"> <span class="price"> <span class="WebRupee">₹</span> 10700 </span> <span class="price-before-discount"><span class="WebRupee">₹</span> 13000</span><span class="redColor">(32% Off)</span> </div>
+                        </div>
+
+                      </div>
+                    </div>
+                   </div>
+                  <!-- /.item -->
+                  
+                  <div class="item item-carousel m-item">
+                    <div class="products">
+                      <div class="product">
+                        
+                        <div class="product-image">
+                          <div class="image"> 
+                            <a href="#">
+                               <img src="images/PIMAGES/PDTDR17P1.jpg" alt=""> 
+                                <img src="images/PIMAGES/PDTDR17P1.jpg" alt="" class="hover-image">
+                            </a> 
+                          </div>                         
+                        </div>
+                        
+                        <div class="product-info text-center">
+                          <h3 class="name"><a href="#">Reliance Jewels 22 Kt Gold Heart Pendant</a></h3>
+                          <!--  -->
+                          <div class="product-price"> <span class="price"> <span class="WebRupee">₹</span> 6500 </span> <span class="price-before-discount"><span class="WebRupee">₹</span> 9000</span><span class="redColor">(32% Off)</span> </div>
+                        </div>
+
+                      </div>
+                    </div>
+                   </div>
+                  <!-- /.item -->
+                  
+                  <div class="item item-carousel m-item">
+                    <div class="products">
+                      <div class="product">
+                        
+                        <div class="product-image">
+                          <div class="image"> 
+                            <a href="#">
+                               <img src="images/PIMAGES/NOSDR18CO.jpg" alt=""> 
+                                <img src="images/PIMAGES/NOSDR18CO.jpg" alt="" class="hover-image">
+                            </a> 
+                          </div>                         
+                        </div>
+                        
+                        <div class="product-info text-center">
+                          <h3 class="name"><a href="#">Reliance Jewels 14 Kt Gold & Diamond Nose Pin</a></h3>
+                          <!--  -->
+                          <div class="product-price"> <span class="price"> <span class="WebRupee">₹</span> 3700 </span> <span class="price-before-discount"><span class="WebRupee">₹</span> 5000</span><span class="redColor">(32% Off)</span> </div>
+                        </div>
+
+                      </div>
+                    </div>
+                   </div>
+                  <!-- /.item -->
+                  
+                  <div class="item item-carousel m-item">
+                    <div class="products">
+                      <div class="product">
+                        
+                        <div class="product-image">
+                          <div class="image"> 
+                            <a href="#">
+                               <img src="images/PIMAGES/CHNRG15AC.jpg" alt=""> 
+                                <img src="images/PIMAGES/CHNRG15AC.jpg" alt="" class="hover-image">
+                            </a> 
+                          </div>                         
+                        </div>
+                        
+                        <div class="product-info text-center">
+                          <h3 class="name"><a href="#">Reliance Jewels 22 Kt Gold Box Style Chain</a></h3>
+                          <!--  -->
+                          <div class="product-price"> <span class="price"> <span class="WebRupee">₹</span> 25000 </span> <span class="price-before-discount"><span class="WebRupee">₹</span> 30000</span><span class="redColor">(32% Off)</span> </div>
+                        </div>
+
+                      </div>
+                    </div>
+                   </div>
+                  <!-- /.item -->
+                  
+                  <div class="item item-carousel m-item">
+                    <div class="products">
+                      <div class="product">
+                        
+                        <div class="product-image">
+                          <div class="image"> 
+                            <a href="#">
+                               <img src="images/PIMAGES/BLTDH17PT.jpg" alt=""> 
+                                <img src="images/PIMAGES/BLTDH17PT.jpg" alt="" class="hover-image">
+                            </a> 
+                          </div>                         
+                        </div>
+                        
+                        <div class="product-info text-center">
+                          <h3 class="name"><a href="#">Reliance Jewels 14 Kt Gold & Diamond Openable Bracelet</a></h3>
+                          <!--  -->
+                          <div class="product-price"> <span class="price"> <span class="WebRupee">₹</span> 21900 </span> <span class="price-before-discount"><span class="WebRupee">₹</span> 25000</span><span class="redColor">(32% Off)</span> </div>
+                        </div>
+
+                      </div>
+                    </div>
+                   </div>
+                  <!-- /.item -->
+                  
+                  <div class="item item-carousel m-item">
+                    <div class="products">
+                      <div class="product">
+                        
+                        <div class="product-image">
+                          <div class="image"> 
+                            <a href="#">
+                               <img src="images/PIMAGES/RNGDF17GD.jpg" alt=""> 
+                                <img src="images/PIMAGES/RNGDF17GD.jpg" alt="" class="hover-image">
+                            </a> 
+                          </div>                         
+                        </div>
+                        
+                        <div class="product-info text-center">
+                          <h3 class="name"><a href="#">Reliance Jewels 22 Kt Gold Asymmetric Designed Pendant</a></h3>
+                          <!--  -->
+                          <div class="product-price"> <span class="price"> <span class="WebRupee">₹</span> 14900 </span> <span class="price-before-discount"><span class="WebRupee">₹</span> 18900</span><span class="redColor">(32% Off)</span> </div>
+                        </div>
+
+                      </div>
+                    </div>
+                   </div>
+                  <!-- /.item -->
+                  
+                  <div class="item item-carousel m-item">
+                    <div class="products">
+                      <div class="product">
+                        
+                        <div class="product-image">
+                          <div class="image"> 
+                            <a href="#">
+                               <img src="images/PIMAGES/BLTDH17PT.jpg" alt=""> 
+                                <img src="images/PIMAGES/BLTDH17PT.jpg" alt="" class="hover-image">
+                            </a> 
+                          </div>                         
+                        </div>
+                        
+                        <div class="product-info text-center">
+                          <h3 class="name"><a href="#">Reliance Jewels 14 Kt Gold & Diamond Openable Bracelet</a></h3>
+                          <!--  -->
+                          <div class="product-price"> <span class="price"> <span class="WebRupee">₹</span> 21900 </span> <span class="price-before-discount"><span class="WebRupee">₹</span> 25000</span><span class="redColor">(32% Off)</span> </div>
+                        </div>
+
+                      </div>
+                    </div>
+                   </div>
+                  <!-- /.item -->
+                  
+                  <div class="item item-carousel m-item">
+                    <div class="products">
+                      <div class="product">
+                        
+                        <div class="product-image">
+                          <div class="image"> 
+                            <a href="#">
+                               <img src="images/PIMAGES/RNGDF17GD.jpg" alt=""> 
+                                <img src="images/PIMAGES/RNGDF17GD.jpg" alt="" class="hover-image">
+                            </a> 
+                          </div>                         
+                        </div>
+                        
+                        <div class="product-info text-center">
+                          <h3 class="name"><a href="#">Reliance Jewels 22 Kt Gold Asymmetric Designed Pendant</a></h3>
+                          <!--  -->
+                          <div class="product-price"> <span class="price"> <span class="WebRupee">₹</span> 14900 </span> <span class="price-before-discount"><span class="WebRupee">₹</span> 18900</span><span class="redColor">(32% Off)</span> </div>
+                        </div>
+
+                      </div>
+                    </div>
+                   </div>
+
+
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        </div>      
+      </div>
+      <!-- New Product Start -->
+
+
+
+       <!-- Special Start -->
+        <div class="row">
+            
+
+
+      
+
+    </div>
+      <!-- Special End --> 
+
+    <!-- /.row --> 
+  </div>
+  <!-- /.container --> 
+</div>
+<!-- /#top-banner-and-menu --> 
+
+<div class="container">
+<div class="row">
+<!-- PRODUCT CATEGORIES <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">--> 
+
+
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 sidebar">
+            <div class="sidebar-widget hot-deals outer-bottom-xs hotDeals">
+          <iframe width="100%" height="268px" src="https://www.youtube.com/embed/537LE8x6AdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+          </div>
+
+<!-- /youtube video iframe --> 
+
+
+
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+<div class="wide-banner cnt-strip">
+                      <div class="image"> <img class="img-responsive" src="images\JWEL-IMAGES\1.jpg" alt="" width="100%"> </div>
+                    </div>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+<div class="wide-banner cnt-strip">
+                      <div class="image"> <img class="img-responsive" src="images\JWEL-IMAGES\2.jpg" alt="" width="100%"> </div>
+                    </div>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+<div class="wide-banner cnt-strip">
+                      <div class="image"> <img class="img-responsive" src="images\JWEL-IMAGES\3.jpg" alt="" width="100%"> </div>
+                    </div>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+<div class="wide-banner cnt-strip">
+                      <div class="image"> <img class="img-responsive" src="images\JWEL-IMAGES\4.jpg" alt="" width="100%"> </div>
+                    </div>
+</div>
+</div>
+</div>
+
+<!--
+            <div class="col-xs-12 col-sm-12 col-md-9 homebanner-holder">
+              
+              <div class="wide-banners wide-bannersNew outer-bottom-xs">
+                <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                    <div class="wide-banner cnt-strip">
+                      <div class="image"> <img class="img-responsive" src="images\JWEL-IMAGES\10.jpg" alt="" width="100%"> </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-4 col-sm-4">
+                    <div class="wide-banner cnt-strip">
+                      <div class="image"> <img class="img-responsive" src="images\JWEL-IMAGES\11.jpg" alt="" width="100%"> </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-4 col-sm-4">
+                    <div class="wide-banner cnt-strip wm-btm0">
+                      <div class="image"> <img class="img-responsive" src="images\JWEL-IMAGES\12.jpg" alt="" width="100%"> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+<div class="wide-banners outer-bottom-xs">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="wide-banner1 cnt-strip">
+                <div class="image"> <img class="img-responsive" src="images\JWEL-IMAGES\9.jpg" alt="" width="100%"> </div>               
+              </div>
+            </div>
+          </div>
+        </div>
+
+              
+
+      </div>
+--> 
+
+</div>
+</div>
+
+
+<div class="container">
+<div class="row">
+<!-- PRODUCT CATEGORIES --> 
+<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+<div style="font-family: 'Open Sans',sans-serif;color: #7c7993;text-align: center;margin: auto auto 20px auto;">
+	<p style="font-size: 28px; margin: 0;padding: 0;">PRODUCT CATEGORIES</p>
+	<p style="font-size: 13px; margin: 0;padding: 8px 0 0 0;">One Stop For All Your Jewellery Needs!</p>
+		<div style="display: block; width: 150px; height: 1px; background-color: #7c7993; margin: 0 auto; margin-top: 10px">
+		</div>
+</div>
+</div>
+      <!-- Offer Start -->
+      <div class="margin-Btm30">
+          <div class="col-md-3 col-sm-3">
+            <div class="wide-banner cnt-strip">
+              <div class="image"> <img class="img-responsive" src="images\JWEL-IMAGES\1.jpg" alt="" width="100%"> </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <div class="wide-banner cnt-strip">
+              <div class="image"> <img class="img-responsive" src="images\JWEL-IMAGES\2.jpg" alt="" width="100%"> </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <div class="wide-banner cnt-strip">
+              <div class="image"> <img class="img-responsive" src="images\JWEL-IMAGES\3.jpg" alt="" width="100%"> </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <div class="wide-banner cnt-strip">
+              <div class="image"> <img class="img-responsive" src="images\JWEL-IMAGES\4.jpg" alt="" width="100%"> </div>
+            </div>
+          </div>
+      </div>
+
+</div>
+</div>
+
+<!-- ===== my code Vikash ===== -->
+
+<!-- ===== Showroom Jewellery ===== -->
+<div class="container">
+<div class="row">
+<!-- title --> 
+<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+<div class="srj_title">
+	<h3>Showroom Jewellery</h3>
+	<h4>One Stop For All Your Jewellery Needs!</h4>
+	<i class="title_border_btm"></i>
+</div>
+</div>
+
+<!-- Diamond Showroom Jewellery boxes --> 
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<div class="sroom_jewel srj_dia">
+<a href="">
+<h2><span>Diamond</span> Jewellery <img src="images/right_arrow.png" /></h2>
+</a>
+</div>
+</div>
+
+<!-- Gold Showroom Jewellery boxes --> 
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<div class="sroom_jewel srj_gol">
+<a href="">
+<h2><span>Gold</span> Jewellery <img src="images/right_arrow.png" /></h2>
+</a>
+</div>
+</div>
+
+<!-- Silver Showroom Jewellery boxes --> 
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<div class="sroom_jewel srj_sil">
+<a href="">
+<h2><span>Silver</span> Jewellery <img src="images/right_arrow.png" /></h2>
+</a>
+</div>
+</div>
+
+<!-- Platinum Showroom Jewellery boxes --> 
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<div class="sroom_jewel srj_pla">
+<a href="">
+<h2><span>Platinum</span> Jewellery <img src="images/right_arrow.png" /></h2>
+</a>
+</div>
+</div>
+</div><!-- /row -->
+</div><!-- /container -->
+
+<!-- ===== Latest From Reliance Jewels ===== -->
+<div class="container">
+<div class="row">
+<!-- title --> 
+<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+<div class="srj_title">
+	<h3>Latest From Reliance Jewels</h3>
+	<i class="title_border_btm"></i>
+</div>
+</div>
+
+
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<div class="latest_rj">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/537LE8x6AdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<div class="latest_rj">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G5z_Bk-agJU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+<div class="rj_view_all"><a href="">View All</a></div>
+</div>
+
+</div><!-- /row -->
+</div><!-- /container -->
+
+<!-- ===== News and insights ===== -->
+<div class="container">
+<div class="row">
+<!-- title --> 
+<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+<div class="ni_title">
+	<h3>News and insights</h3>
+	<i class="title_border_btm"></i>
+</div>
+</div>
+
+<!-- Lounches --> 
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<div class="nws_ins ni_ltst">
+<a href="">
+<h2>Lounches <img src="images/right_arrow.png" /></h2>
+</a>
+</div>
+</div>
+
+<!-- Media --> 
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<div class="nws_ins ni_mdia">
+<a href="">
+<h2>Media <img src="images/right_arrow.png" /></h2>
+</a>
+</div>
+</div>
+</div><!-- /row -->
+</div><!-- /container -->
+
+<!-- ===== Locate Store - Gift Card ===== -->
+<div class="container">
+<div class="row">
+<!-- Locate Store -->
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+<div class="locate_store">
+<div class="nws_ins ni_mdia">
+<a href="">
+<h2>Locate Store <img src="images/right_arrow.png" /></h2>
+</a>
+</div>
+</div>
+</div><!-- /Locate Store --> 
+<!-- Gift Card -->
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+<div class="gift_card">
+<div class="nws_ins ni_mdia">
+<a href="">
+<h2>Gift Card <img src="images/right_arrow.png" /></h2>
+</a>
+</div>
+</div>
+</div><!-- /Gift Card -->
+</div><!-- /row -->
+</div><!-- /container -->
+
+<!-- ===== Bringing Your Golden Wishes to Life ===== -->
+<div class="golden_wishes">
+<div class="container">
+<div class="row row-pad15">
+<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+<h2>Bringing Your Golden Wishes to Life</h2>
+<i class="title_border_btm"></i>
+</div>
+
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col_pad0">
+<div class="golden_step">
+
+<img src="images/golden-steps-logo.png" alt="Golden Step Scheme" />
+<h2>Golden Steps Scheme</h2>
+<p>Shopping for the finest jewellery has never been this easy.</p>
+<p>Plan your Jewellery purchase in advance & Earn up to 350% of one month’s Instalment *</p>
+
+</div>
+</div>
+
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col_pad0">
+<div class="swarna_vriddhi">
+<i class="inset_shadow"></i>
+<img src="images/swarna-vriddhi-logo-sm.png" alt="Swarna Vriddhi Scheme" />
+<h2>Swarna Vriddhi Scheme</h2>
+<p>A 9-month Gold Weight based Jewellery purchase scheme, which credits gold grammage to your account against your instalment amount*</p>
+<p>Come, Enrol today to Stop worrying about the Increase in Gold price at the time of purchase</p>
+
+</div>
+</div>
+
+</div><!-- /row -->
+</div><!-- /container -->
+</div><!-- /golden_wishes -->
+
+<!-- ===== Social Share ===== -->
+<div class="container">
+<div class="row">
+
+<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+<div class="ss_title">
+<h2>Social Share</h2>
+<i class="title_border_btm"></i>
+</div>
+</div>
+
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+<div class="ss_fb">
+
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0&appId=1848360862073795&autoLogAppEvents=1"></script>
+
+
+<div class="fb-page" data-href="https://www.facebook.com/RelianceJewels/" data-tabs="timeline" data-width="" data-height="490px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/RelianceJewels/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/RelianceJewels/">Reliance Jewels</a></blockquote></div>
+
+
+</div>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+<div class="ss_insta">
+insta
+</div>
+</div>
+</div><!-- /row -->
+</div><!-- /container -->
+
+
+<!-- ===== Blog ===== -->
+<div class="container">
+<div class="row">
+
+<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+<div class="ss_title">
+<h2>Blog</h2>
+<i class="title_border_btm"></i>
+</div>
+</div>
+
+
+<div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+<a href="#">
+<div class="blog_con">
+<div class="thumb">
+<img src="images/gold-collection.jpg" alt="latest blog" />
+</div>
+<div class="blog_title">
+<h3>68 Reliance Jewels Flagship Showrooms & 67 Shop in Shop</h3>
+</div>
+<div class="blog_des">
+<p>Shopping for the finest jewellery has never been this easy. Plan your Jewellery purchase in advance & Earn up to 350% of one month’s Instalment *A 9-month Gold Weight based Jewellery purchase scheme, which credits gold grammage to your account against your instalment amount* Come, Enrol today to Stop worrying about the Increase in Gold price at the time of purchase</p>
+<img src="images/right_arrow.png" alt="view blog" />
+</div>
+
+</div>
+</a>
+</div>
+
+<div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+<a href="#">
+<div class="blog_con">
+<div class="thumb">
+<img src="images/gold-collection.jpg" alt="latest blog" />
+</div>
+<div class="blog_title">
+<h3>68 Reliance Jewels Flagship Showrooms & 67 Shop in Shop</h3>
+</div>
+<div class="blog_des">
+<p>Shopping for the finest jewellery has never been this easy. Plan your Jewellery purchase in advance & Earn up to 350% of one month’s Instalment *A 9-month Gold Weight based Jewellery purchase scheme, which credits gold grammage to your account against your instalment amount* Come, Enrol today to Stop worrying about the Increase in Gold price at the time of purchase</p>
+<img src="images/right_arrow.png" alt="view blog" />
+</div>
+
+</div>
+</a>
+</div>
+
+<div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+<a href="#">
+<div class="blog_con">
+<div class="thumb">
+<img src="images/gold-collection.jpg" alt="latest blog" />
+</div>
+<div class="blog_title">
+<h3>68 Reliance Jewels Flagship Showrooms & 67 Shop in Shop</h3>
+</div>
+<div class="blog_des">
+<p>Shopping for the finest jewellery has never been this easy. Plan your Jewellery purchase in advance & Earn up to 350% of one month’s Instalment *A 9-month Gold Weight based Jewellery purchase scheme, which credits gold grammage to your account against your instalment amount* Come, Enrol today to Stop worrying about the Increase in Gold price at the time of purchase</p>
+<img src="images/right_arrow.png" alt="view blog" />
+</div>
+
+</div>
+</a>
+</div>
+
+</div><!-- /row -->
+</div><!-- /container -->
+
+<style>
+.blog_con{background:#fff;padding:0px;margin-bottom:40px;}
+.thumb{height:180px;width:100%;overflow:hidden;}
+.thumb img{min-height:180px;width:100%;}
+.blog_title{}
+.blog_title h3{padding:0px 20px;}
+.blog_des{padding:6px 20px 16px 20px;}
+.blog_des p{}
+.blog_des img{display:block;}
+
+
+</style>
+
+<!-- ================================================ Test area ================================================== -->
+
+
+
+
+
+
+
+
+<!-- ================================================ Test area ================================================== -->
+
+
+
+
+
+
+<!-- ================================================ FOOTER ================================================== -->
+
+    <div class="row contentMain">
+      <div class="container">
+        <div class="col-md-12 col-sm-12">
+        <div class="contentBox">
+          <h4>Reliance Jewels: A legacy Of Crafting Excellence</h4>
+          <p>Reliance Jewels, ur premium jewellery showrooms present across the country offer the widest range of stunning design. At reliance Jewels, we practice transparent and ethical policies which guarantee purity, excellent quality and a pleasant shopping experience. whether it is the exchange policy or the buyback policy, you can rest assured about receiving the true value for money.</p>
+
+          <h4>Why Shop at Reliance Jewels?</h4>
+          <p>Reliance Jewels is The most spectacular jewellery collection oozing with diversity and splendour welcome you at Reliance Jewels. We offer a profuse mix of traditional and contemporary designs. Be it you, the senior members of your family or the little wonders, we have something gorgeous for everyone. Our assorted collections exhibit ornaments for special occasions as well as casual elegance. We don’t just make jewellery, we carve masterpieces. Therefore, any jewellery you choose will redefine your glory only to make it more brilliant..</p>
+        </div>
+    </div>
+      </div>
     </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+
+<footer id="footer" class="footer color-bg">
+
+  <div class="copyright-bar">
+    <div class="container">
+      <div class="col-xs-12 col-sm-4 no-padding social">
+        <div class="clearfix payment-methods">
+        <ul class="link">
+          <li class="fb pull-left"><a target="_blank" rel="nofollow" href="https://goo.gl/uiauZs" title="Facebook"></a></li>
+          <li class="insta pull-left"><a target="_blank" rel="nofollow" href="https://goo.gl/5mekSU" title="Instagram"></a></li>
+          <li class="youtube pull-left"><a target="_blank" rel="nofollow" href="https://goo.gl/coa3K8" title="Youtube"></a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="module-heading">
+            <h4 class="module-title">HELP</h4>
+          </div>
+          <div class="module-body">
+            <ul class='list-unstyled'>
+              <li><a href="#">Track An Order</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Brand Sitemap</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.col -->
+        
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="module-heading">
+            <h4 class="module-title">KNOW US BETTER</h4>
+          </div>
+          <!-- /.module-heading -->
+          
+          <div class="module-body">
+            <ul class='list-unstyled'>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Why Reliance Jewels</a></li>
+              <li><a href="#">Management team</a></li>
+              <li><a href="#">Certifications</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Store locator</a></li>
+            </ul>
+          </div>
+          <!-- /.module-body --> 
+        </div>
+        <!-- /.col -->
+        
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="module-heading">
+            <h4 class="module-title">POLICIES</h4>
+          </div>
+          <div class="module-body">
+            <ul class='list-unstyled'>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">IPR Policy</a></li>
+              <li><a href="#">Terms Of Use</a></li>
+              <li><a href="#">Promotions - T&C</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.col -->
+		
+		<div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="module-heading">
+            <h4 class="module-title">USEFUL LINKS</h4>
+          </div>
+          <!-- /.module-heading -->
+          
+          <div class="border-btm module-body m-btm0 p-btm0">
+            <ul class='list-unstyled'>
+              <li><a href="#">Lookbook</a></li>
+              <li><a href="#">Videos</a></li>
+              <li><a href="#">Rewards</a></li>
+              <li><a href="#">Special Offer</a></li>
+              <li><a href="#">Testimonials</a></li>
+            </ul>
+          </div>
+          <!-- /.module-body --> 
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="copyt" align="center">
+      <p>&copy; 2019 Reliance Jewels. All Rights Reserved. Network 18 Sites. </p>
+  </div>
+</footer>
+<!-- ================= FOOTER : END ===================================== --> 
+
+
+
+
+
+
+
+
+<!-- JavaScripts placed at the end of the document so the pages load faster --> 
+<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/bootstrap-hover-dropdown.min.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/echo.min.js"></script> 
+<script src="js/jquery.easing-1.3.min.js"></script> 
+<script src="js/bootstrap-slider.min.js"></script> 
+<script src="js/jquery.rateit.min.js"></script> 
+<script src="js/lightbox.min.js"></script> 
+<script src="js/bootstrap-select.min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/scripts.js"></script>
+
+<script type="text/javascript">
+  $(window).scroll(function(){
+    if ($(window).scrollTop() >= 300) {
+        $('header-nav').addClass('fixed-header');
+        $('header-nav div').addClass('visible-title');
+    }
+    else {
+        $('header-nav').removeClass('fixed-header');
+        $('header-nav div').removeClass('visible-title');
+    }
+});
+
+
+
+
+</script>
+  
 </body>
-
 </html>
+
