@@ -1,0 +1,199 @@
+/*Cancelled Part */
+.cancelledPage {width: 100%; float: left;}
+.cancelledPage h3 {font-size: 16px; font-weight: 600; color:#000; float: left; width: 100%;}
+.cancelledPage h4 {font-size: 14px; font-weight: 600; color:#000; float: left; margin:5px 0;float: left;width: 100%;}
+.cancelledPage p {font-size: 14px; font-weight: 400; color:#000; float: left; margin:5px 0;float: left;width: 100%;}
+.can-rewards { margin:5px 10px; float: right; text-align: right; width: 100%}
+.can-rewards h2 { float: left; margin:0 0px 0 0; background:#f9f7f7; border-radius: 3px;}
+.can-rewards h2 img {float: left; width: 22px; height: 22px; padding:3px;}
+.can-rewards h3 {float: left; line-height: 1.1rem; display: contents; margin:0 10px 0 10px; padding:0; font-weight: 500; font-size: 14px;}
+.can-rewards h3 img {width: 22px; height: 22px; padding:3px;}
+.can-rewards h3 span {font-size: 12px;color: #5f5f5f;font-weight: 400;}
+.can-rewards h5 { margin:0.5rem 0 0 0; padding:0;}
+.can-rewards p {font-size: 14px; float: left; text-align: left;width: 100%;margin:0.5rem 0 0.5rem 2rem;}
+.canl-proItem {width: 100%; float: left;}
+.canl-proItem .productimg {width: 20%; float: left;}
+.canl-proItem .productimg img {width: 80%;}
+.canl-proItem .productText {width: 80%; float: left;}
+.canl-proItem .productText h2 {font-size: 15px; font-weight: 500;  margin: 0px 0 5px 0; padding:0; float:left; width: 100%;}
+.canl-proItem .productText h2 a {color:#212121;}
+.canl-proItem .productText h2 a:hover {color:#de151e;}
+.canl-proItem .productText h3 {font-size: 13px; font-weight: 500; color: #878787; margin: 5px 0 2px 0; padding:0; float:left; width: 100%;}
+.canl-proItem h2 {float: left; font-size: 14px; color: #212121; font-weight: 400;}
+.canl-proItem h2 i { font-size: 18px; color: #de151e;-webkit-transform: scaleX(-1);transform: scaleX(-1);}
+.canl-proItem h2 span {margin: 0 0 0 8px;}
+
+.sidebarNew {padding:10px 0 0 0; border-bottom: none !important;}
+.sidebar-widget .widget-header {padding: 10px 0px 5px 0px;}
+.sidebar-widget .sidebar-widget-body .price-range-holder {padding:10px 0 10px;position: relative;}
+.minText {font-size: 11px; float: left; width: 50px; text-align: center; font-weight: 600;}
+.maxText {font-size: 11px; float: left; width: 70px; text-align: center; font-weight: 600;}
+.sidebar-widget .sidebar-widget-body .price-range-holder .min-max {font-size: 15px;font-weight: 600;color: #171717;margin-top: 15px;font-family: Montserrat,sans-serif;}
+.sidebar-widget .sidebar-widget-body .price-range-holder .slider.slider-horizontal {height: 20px;width:100% !important;}
+.sidebar-widget .sidebar-widget-body .price-range-holder .slider {display: inline-block;position: relative;vertical-align: middle;margin-top: 0px;}
+.sidebar-widget .sidebar-widget-body .price-range-holder .slider .slider-track {background-color: #f1f1f1;background-repeat: repeat-x;cursor: pointer;position: absolute;width: 99% !important;height: 2px;left: 0;margin-top: -5px;top: 50%;}
+.sidebar-widget .sidebar-widget-body .price-range-holder .slider .slider-track .slider-selection {bottom: 0;height: 100%;top: 0;background-repeat: repeat-x;box-sizing: border-box;position: absolute;background: #de151e;}
+.sidebar-widget .sidebar-widget-body .price-range-holder .slider .slider-track .slider-handle {border: 5px solid #0f6cb2;}
+.sidebar-widget .sidebar-widget-body .price-range-holder .slider .slider-track .slider-handle {background-color: #FFFFFF;background-repeat: repeat-x;-webkit-border-radius: 400px;-moz-border-radius: 400px;border-radius: 400px;height: 20px;margin-left: -3px !important;opacity: 1;position: absolute;top: -3px;width: 20px;margin-top: -5px;}
+.sidebar-widget .sidebar-widget-body .price-range-holder .slider .slider-track .slider-handle {border: 5px solid #de151e;}
+.sidebar-widget .sidebar-widget-body .price-range-holder .slider .tooltip {margin-top: -36px;}
+.sidebar-widget .sidebar-widget-body .accordion .accordion-group .accordion-body .accordion-inner1 {margin: 0px 0 6px;}
+.sidebar-widget .sidebar-widget-body .accordion .accordion-group .accordion-heading1 .accordion-toggle.collapsed {color: #252525;}
+.sidebar-widget .sidebar-widget-body .accordion .accordion-group .accordion-heading1 .accordion-toggle {clear: both;display: block;font-size: 14px;line-height: 28px; font-weight: 500; padding:12px 0;}
+.sidebar-widget .sidebar-widget-body .accordion .accordion-group .accordion-heading1 .accordion-toggle:after {content: "\f077";float: right;font-family: fontawesome;font-size: 14px;}
+.sidebar-widget .sidebar-widget-body .accordion .accordion-group .accordion-heading1 .accordion-toggle.collapsed:after {color: #636363;content: "\f078";font-family: fontawesome;font-weight: normal;}
+.sidebar-widget .sidebar-widget-body .accordion .accordion-group .accordion-heading1 .accordion-toggle, .sidebar .sidebar-module-container .sidebar-widget .sidebar-widget-body .accordion .accordion-group .accordion-heading1 .accordion-toggle:hover, .sidebar .sidebar-module-container .sidebar-widget .sidebar-widget-body .accordion .accordion-group .accordion-heading1 .accordion-toggle:focus, .sidebar .sidebar-module-container .sidebar-widget .sidebar-widget-body .accordion .accordion-group .accordion-heading1 .accordion-toggle:after {color: #0c0c0c;}
+.cancelledText {width: 100%; float: left; border-top: solid 1px #f3f3f3;}
+.cancelledText h2 {font-size: 18px; font-weight: 600; text-align: right; color:#424242; float: right; width: 100%; margin:2rem 15px 2rem 0; padding:0;}
+.cancelledText h5 {font-size: 15px; font-weight: 600; text-align: left; color:#de151e; float: right; width: 100%; margin:2rem -1.5rem 2rem 0; padding:0;}
+.cancelledText h5 a {color:#de151e;}
+.cancelledText h3 {font-size: 11px; font-weight: 400; color:#212121; float: left; width: 100%; margin:5px 0 0 0; padding:0;}
+.cancelledText h4 {font-size: 11px; text-align: right; font-weight: 400; color:#212121; float: left; width: 100%; margin:5px 0 0 0; padding:0;}
+.cancelledText p  {font-size: 12px; text-align: left; font-weight: 600; color:#212121; float: left; width: 100%; margin:5px 0 8px 0; padding:0;}
+.overflow {overflow: hidden;}
+.boxHeight {padding-bottom: 99999px; margin-bottom: -99999px;}
+
+
+/*Success Part */
+.successDiv {width: 100%; float: left;}
+.successDiv-LeftBox {width: 29%; float: left; padding:2.5rem 0 2.5rem 0.5rem;}
+.successDiv-LeftBox img {width: 90px; margin:0 0 0 10px;}
+.successDiv-LeftBox1 {width: 71%; float: left;}
+.successDiv-LeftBox1 h2 {font-size: 22px; float: left; font-weight: 600; color:#de151e; float: left; width: 100%; padding:4rem 0 1rem 0; margin:0;}
+.successDiv-LeftBox1 h3 {font-size: 13px; float: left; font-weight: 400; color:#212121; float: left; width: 100%; padding:0;margin:0;}
+.successDiv-LeftBox1 h3 span {font-weight: 600;}
+.successDiv-LeftBox1 h4 {font-size: 16px; float: left; font-weight: 400; color:#212121; float: left; width: 100%; padding:0.8rem 0 0 0;margin:0;}
+.successDiv-LeftBox1 h4 span {font-weight: 600;}
+.successDiv-RightBox {width: 75%; float: left; padding:2.5rem 0 2.5rem 0.5rem;}
+.successDiv-RightBox h2 {font-size: 18px; float: left; font-weight: 600; color:#212121; float: left; width: 100%; padding:1rem 0 1rem 0; margin:0;}
+.successDiv-RightBox h3 {font-size: 14px; float: left; font-weight: 400; color:#212121; float: left; width: 100%; padding:0;margin:0;}
+.successDiv-RightBox1 {width: 25%; float: left; padding:2.5rem 0 2.5rem 0.5rem;}
+.successDiv-RightBox1 img {width: 60px; text-align: right; margin: 1.1em 0 0 0;}
+.checkout-page-button5 {margin:0em 0 0 0.5em; border-radius:3px;padding:8px 2em;font-weight: 500;font-size: 12px; outline: none; background: #ef7c3a; color:#fff; text-transform: none;}
+.checkout-page-button5:hover, .checkout-page-button5:focus {background: #f56d1f;  box-shadow: 0 4px 6px 0 rgba(0,0,0,.12); color:#fff; outline: none;}
+.subscribeBtn {margin:0em 0 0 0em; border-radius:3px;padding:8px 2em;font-weight: 600;font-size: 12px; outline: none; background: #fff; color:#de151e;box-shadow: 0 4px 6px 0 rgba(0,0,0,.04);}
+.subscribeBtn:hover, .subscribeBtn:focus {background: #fff;  box-shadow: 0 4px 6px 0 rgba(0,0,0,.20); color:#de151e; outline: none;}
+.successName {float: left; width: 100%;}
+.successName h2 { font-size: 22px; font-weight: 500; color:#212121; float: left; width: 98%; margin: 1.5rem 1% 1.5rem 1%; padding:0; line-height: 1.5rem; }
+.successName h3 {font-size: 14px; font-weight: 500; color: #212121; float: left;width: 98%; margin: 3rem 1% 2rem 1%; padding:0; line-height: 1.8rem;}
+.successName h3 span {font-weight: 600;}
+.successName p {font-size: 14px; font-weight: 500; color: #212121; float: left;width: 98%; margin: 0 1% 2rem 1%; padding:0; line-height: 1.8rem;}
+.successName p span {font-weight: 600;}
+
+
+
+/*Order Part */
+.orderHistoryDiv {float:left; margin:0; padding:0 0 0rem 0; width: 100%;}
+.orderHistoryDiv tbody {margin:0 0 1rem 0;}
+.orderHistoryDiv h5 {float: left; margin:0 0 0 0; width: 100%; font-size: 14px; padding:0; color:#212121; font-weight: 500;}
+.orderHistoryDiv h6 {float: left; margin:5px 0 0 0; width: 100%; font-size: 12px; color:#878787; font-weight: 500; line-height: 1.4rem;}
+.orderHistoryDiv .media>.pull-left {margin:0 12px 2em 10px;}
+.media-body h4 {font-size: 14px;}
+.media-body h4 a {color:#212121;}
+.media-body h4 a:hover {color:#de151e;}
+.media-body h5 {font-size: 12px;margin:8px 0 0 0; color:#878787; padding:0;}
+.thumbnailNew {float:left;border:none; margin:0; padding:0;}
+.thumbnailNew:hover {border:none;}
+.ordrOnDate {float:left; margin:0; padding:0; width: 100%;}
+.ordrOnDate h4 {font-size: 14px; color:#878787;}
+.ordrOnDate h4 span {color:#212121;}
+.ordrOnDate h5 {font-size: 14px; color:#878787; text-align: right;}
+.ordrOnDate h5 span {color:#212121;}
+.returnTable {float: left; width: 100%; margin:1rem 0 1rem 0; padding:0; border:solid 1px #f9f9f9;}
+.returnTable h2 {font-size: 14px; font-weight: 600; color: #212121; float: left; width: 100%;margin:1rem 0; padding:0;}
+.returnTable h3 {font-size: 12px; color:#878787; float: left; margin:1rem 0 1rem 0; padding:0; line-height: 1.8rem;}
+.returnTable h4 {font-size: 14px; font-weight: 400; color:#212121; float: right; text-align: left; margin:1rem 0 1rem 0; padding:0; line-height: 2rem;}
+.viewDetails {color:#212121; font-size: 14px; text-align: right; float: right; color:#212121;}
+.viewDetails:hover {color:#212121;}
+.viewDetails1 {float: right; margin:2px 0 0 5px;}
+
+
+
+
+
+
+
+
+/* Account Page */
+.tab {display: none;}
+.tabs ul {float: left;margin-right: 30px;}
+.tabs ul > li {list-style: none;}
+.tabs ul > li a {text-decoration: none;padding: 10px;width: 250px;color: #555;display: inline-block;border-bottom: 1px solid #eee;}
+.tabs ul > li a:hover {background-color: #efefef;border-bottom: 1px solid #ddd;}
+.tabs ul > li a.active { background-color: #efefef; }
+#jquery-script-menu {
+position: fixed;
+height: 90px;
+width: 100%;
+top: 0;
+left: 0;
+border-top: 5px solid #316594;
+background: #fff;
+-moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+-webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+z-index: 999999;
+padding: 10px 0;
+-webkit-box-sizing:content-box;
+-moz-box-sizing:content-box;
+box-sizing:content-box;
+}
+
+.jquery-script-center {
+width: 960px;
+margin: 0 auto;
+}
+.jquery-script-center ul {
+width: 212px;
+float:left;
+line-height:45px;
+margin:0;
+padding:0;
+list-style:none;
+}
+.jquery-script-center a {
+	text-decoration:none;
+}
+.jquery-script-ads {
+width: 728px;
+height:90px;
+float:right;
+}
+.jquery-script-clear {
+clear:both;
+height:0;
+}
+
+
+
+
+
+
+
+
+
+
+.as-tab-container{z-index: 10;padding: 0 !important;border-radius: 4px;-moz-border-radius: 4px;/*border:1px solid #ddd;*/margin: 20px 0 20px 0px;/*-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);box-shadow: 0 6px 12px rgba(0,0,0,.175);-moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);*//*background-clip: padding-box;opacity: 0.97;filter: alpha(opacity=97);*/}
+
+.tab {padding-right: 0;padding-left: 0;padding-bottom: 0; height: 100%; margin:0 0 0 0;background-color: #ffffff;border-radius: 2px;box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);}
+.tab h3{font-size: 16px; font-weight: 600; color:#878787;  margin:0 0 0 0rem; padding:1.5rem 0 1rem 3rem; border-top: solid 1px #eaeaea;line-height: 3rem; float:left; width: 100%;}
+.tab h3 i {font-size: 22px;float: left;margin: 0 14px 0 0;color: #2874f0;line-height: 3rem;}
+.tab button {margin-bottom: 0;border: none;background: #fff;text-align: left;padding: 12px 0 12px 6.5rem;width: 100%;font-size: 14px;font-weight: 500;color: #757575;outline: none;}
+.tab button:hover {background-color: #f5faff;color: #2874f0; border:none;}
+.tab button.active {background-color: #f5faff;color: #2874f0; border:none;}
+
+.tabcontent {float: left;padding: 0px 20px 20px 20px;width: 100%;border-left: none; background: #fff;border-radius: 2px;box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);}
+.tabcontent h3 {font-size: 20px;font-weight: 500;float: left; width: 100%;padding:0; margin:20px 0 10px 0;}
+.tabcontent h6 {font-size: 16px;font-weight: 500;padding:20px 0 0 0; margin:0;float: left; width: 100%;}
+.tabcontent p {font-size: 14px;font-weight: 400;padding:4px 0 4px 0; margin:0;float: left; width: 100%; line-height: 1.5em;}
+.tabcontent p span {font-weight: 600; float: left; width: 100%;padding:8px 0 0px 0;}
+.accountEdit {font-size: 14px; font-weight: 500; color:#2874f0; margin:0 0 0 20px;}
+
+.deliveryDiv-Box2 {float: left;margin:1em 0 0 1.5em; padding:0; width: 100%;}
+.deliveryDiv-Box2 .radio-checkout-account label input[type="radio"] + .label-text:before {margin-top:3px;}
+.radio-checkout-account label{position: relative;cursor: pointer;color: #666;font-size: 30px; margin:0; padding:0; float: left; width: 100%}
+.radio-checkout-account label input[type="checkbox"], .radio-checkout-account label input[type="radio"]{position: absolute;right: 9000px;}
+.radio-checkout-account label input[type="radio"] + .label-text:before{content: "\f10c";font-family: "FontAwesome";speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;line-height: 1;-webkit-font-smoothing:antialiased;width: 1em;display: inline-block;margin-right: 5px; font-size: 20px;}
+.radio-checkout-account label input[type="radio"]:checked + .label-text:before{content: "\f192";color: #0f6cb2;animation: effect 250ms ease-in;}
+.radio-checkout-account label input[type="radio"]:disabled + .label-text{color: #aaa;}
+.radio-checkout-account label input[type="radio"]:disabled + .label-text:before{content: "\f111";color: #ccc;}
