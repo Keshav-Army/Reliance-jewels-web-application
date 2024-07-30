@@ -1,0 +1,105 @@
+/*!my css RJ_V
+ */
+
+/*==Showroom Jewellery==*/
+.srj_title{}
+.srj_title h3{margin: 20px 0px 8px 0px;padding: 0px;font:600 28px/28px 'Open Sans',sans-serif;color: #7c7993;text-align: center;text-transform:uppercase;}
+.srj_title h4{margin: 0px;padding: 0px;font:400 14px/18px 'Open Sans',sans-serif;color: #7c7993;text-align: center;text-transform:uppercase;}
+.sroom_jewel{height: 390px;width: 100%;padding: 0;position:relative;margin-bottom: 30px;background-position: center center!important;}
+.srj_dia{background:url(../images/DIA_collection.jpg) no-repeat;background-size: cover;}
+.srj_gol{background:url(../images/gold-collection.jpg) no-repeat;background-size: cover;}
+.srj_sil{background:url(../images/Silver_collection.jpg) no-repeat;background-size: cover;}
+.srj_pla{background:url(../images/Platinum_collection.jpg) no-repeat;background-size: cover;}
+.sroom_jewel a:hover{background-color:#00000078;}
+.sroom_jewel a{display:block;width: 100%;height: 100%;color:#fff;text-shadow:1px 1px 0px #000000;}
+.sroom_jewel a h2{font:300 28px/48px 'Open Sans',sans-serif;margin:0 auto;position:absolute;bottom:40px;left:0px;right:0px;text-align:center;}
+.sroom_jewel a h2 span{font:600 28px/48px 'Open Sans',sans-serif;}
+.sroom_jewel img{width:auto;-webkit-filter: drop-shadow(1px 1px 0px #000);filter: drop-shadow(1px 1px 0px #000); }
+.col_pad0{padding:0px}
+.row-pad15{padding:15px}
+.title_border_btm{width: 150px;height: 1px;display: block;clear: both;margin: 10px auto 20px auto;background: #7c7993;}
+.rj_view_all{text-align: center;font:400 14px/40px 'Open Sans',sans-serif;margin:0px;}
+.rj_view_all a{background: #fff;padding: 4px 8px;box-shadow: 0px 0px 2px #000;border-radius: 4px;}
+
+/*==LATEST FROM RELIANCE JEWELS==*/
+.latest_rj{border-radius:4px;text-align:center;padding:0px;}
+.latest_rj iframe{max-width: 100%;width: 100%;}
+
+/*==NEWS AND INSIGHTS==*/
+.ni_title{}
+.ni_title h3{margin: 6px;padding: 0px;font:600 28px/48px 'Open Sans',sans-serif;color: #7c7993;text-align: center;text-transform:uppercase;}
+.nws_ins{height: 194px;width: 100%;padding: 0;position:relative;margin-bottom:40px;}
+
+.ni_ltst{background:url(images/DIA_collection.jpg) no-repeat;background-position:center top;background-size: cover;}
+.ni_mdia{background:url(images/gold-collection.jpg) no-repeat;background-position:center top;background-size: cover;}
+.ni_cust{background:url(images/Silver_collection.jpg) no-repeat;background-position:center top;background-size: cover;}
+
+.nws_ins a:hover{background-color:#00000078;}
+.nws_ins a{display:block;width: 100%;height: 100%;color:#fff;text-shadow:1px 1px 0px #000000;background: #d4d4d4;}
+.nws_ins a h2{font:600 20px/40px 'Open Sans',sans-serif;margin:0 auto;position:absolute;bottom:16px;left:0px;right:0px;text-align:center;}
+.nws_ins a h2 img{display: block;margin: 0 auto;}
+
+/*== Locate Store - Gift Card ==*/
+.locate_store{height: 194px;width: 100%;padding: 0;position:relative;background: #cccccc;}
+.locate_store:hover{background-color:#00000078;}
+
+.gift_card{height: 194px;width: 100%;padding: 0;position:relative;background: #e5e5e5;}
+.gift_card:hover{background-color:#00000078;}
+
+
+/*== bringing your golden wishes to life ==*/
+.golden_wishes{background:url(images/bg-pattern.jpg) repeat;padding:40px 0px;margin:16px 0px;}
+.golden_wishes h2{margin: 6px;padding: 0px;font: 600 28px/48px 'Open Sans',sans-serif;color: #7c7993;text-align: center;text-transform: uppercase;}
+.golden_step{background:#fff;text-align:center;padding:40px;margin:0px;height:420px;}
+.golden_step h2{font:400 28px/48px 'Open Sans',sans-serif;}
+.golden_step p{font:300 14px/22px 'Open Sans',sans-serif;}
+
+.swarna_vriddhi{background:#fff;text-align:center;padding:40px;margin:0px;height:420px;border-left:1px solid #b9b9b9;}
+.swarna_vriddhi h2{font:400 28px/48px 'Open Sans',sans-serif;}
+.swarna_vriddhi p{font:300 14px/22px 'Open Sans',sans-serif;}
+
+.inset_shadow{height:400px;width:1px;-webkit-box-shadow: inset 12px 0px 11px -11px black;-moz-box-shadow: inset 12px 0px 11px -11px black;box-shadow: inset 12px 0px 11px -11px black;}
+
+/*== Social Share ==*/
+.ss_title h2{margin: 6px;padding: 0px;font: 600 28px/48px 'Open Sans',sans-serif;color: #7c7993;text-align: center;text-transform: uppercase;}
+.ss_fb, .ss_insta{background:#fff;padding:6px;}
+
+/*== top header ==*/
+.cnt_left{float:left!important;}
+
+.top_header_icon{height:21px;width:21px;display:inline-block;float:left;}
+
+.store_icon{background:url(../images/rj_location_iocn.png) no-repeat;}
+.phone_icon{background:url(../images/rj_phone_icon.png) no-repeat;}
+
+.order_icon{background:url(../images/rj_order_icon.png) no-repeat;}
+.mycart_icon{background:url(../images/rj_cart_icon.png) no-repeat;}
+.logsign_icon{background:url(../images/rj_profile_icon.png) no-repeat;}
+
+/*== media css vikash ==*/
+
+
+
+@media screen and (max-width:768px) and (min-width:320px){
+
+
+
+
+
+
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+
+
+
+
+}
+
+@media screen and (min-width:992px) and (max-width:1199px){
+
+
+
+
+
+}
