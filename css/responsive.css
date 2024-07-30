@@ -547,7 +547,7 @@
 @media(min-width: 1600px){
   .container {padding: 0 180px;width:auto}
   .sidebar-widget iframe {
-    height: 55vh !important;
+    height: 52vh !important;
   }
 }
 
