@@ -3264,19 +3264,6 @@ section {
   color: #fff;
 }
 
-.social .fb a:before {
-  content: "\f09a";
-  font-family: FontAwesome;
-}
-
-.social .fb a {
-  font-size: 20px;
-  display: inline-block !important;
-  text-align: center;
-  padding: 0;
-  background: #3c5b9b !important;
-}
-
 .social .insta a:before {
   content: "\f16d";
   font-family: FontAwesome;
@@ -3290,61 +3277,6 @@ section {
   background: #3c5b9b !important;
 }
 
-.social .tw a:before {
-  content: "\f099";
-  font-family: FontAwesome;
-}
-
-.social .tw a {
-  font-size: 16px;
-  display: inline-block !important;
-  text-align: center;
-  padding: 0;
-  background: #359bed !important;
-}
-
-.social .googleplus a:before {
-  content: "\f0d5";
-  font-family: FontAwesome;
-}
-
-.social .googleplus a {
-  font-size: 16px;
-  display: inline-block !important;
-  text-align: center;
-  padding: 0;
-  background: #e33729 !important;
-}
-
-.social .rss a:before {
-  content: "\f09e";
-  font-family: FontAwesome;
-}
-
-.social .rss a {
-  content: "\f09e";
-  font-family: FontAwesome;
-  font-size: 16px;
-  display: inline-block !important;
-  text-align: center;
-  padding: 0;
-  background: #fd9f13 !important;
-}
-
-.social .pintrest a:before {
-  content: "\f0d3";
-  font-family: FontAwesome;
-}
-
-.social .pintrest a {
-  content: "\f0d3";
-  font-family: FontAwesome;
-  font-size: 16px;
-  display: inline-block !important;
-  text-align: center;
-  padding: 0;
-  background: #cb2027 !important;
-}
 
 .social .linkedin a:before {
   content: "\f0e1";
@@ -3361,15 +3293,68 @@ section {
   background: #027ba5 !important;
 }
 
-.social .youtube a:before {
-  content: "\f167";
+
+.social .github a:before {
+  content: "\f09b";
   font-family: FontAwesome;
 }
 
-.social .youtube a {
+.social .github a {
   font-size: 16px;
   display: inline-block !important;
   text-align: center;
   padding: 0;
-  background: #f03434 !important;
+  background: #1e3050 !important;
+}
+
+.social .whatsapp a:before {
+  content: "\f232";
+  font-family: FontAwesome;
+}
+
+.social .whatsapp a {
+  font-size: 16px;
+  display: inline-block !important;
+  text-align: center;
+  padding: 0;
+  background: #25d366 !important;
+}
+
+.social .twitter a:before {
+  content: "\f099";
+  font-family: FontAwesome;
+}
+
+.social .twitter a {
+  font-size: 16px;
+  display: inline-block !important;
+  text-align: center;
+  padding: 0;
+  background: #359bed !important;
+}
+
+.social .twitter a:before {
+  content: "\f099";
+  font-family: FontAwesome;
+}
+
+.social .twitter a {
+  font-size: 16px;
+  display: inline-block !important;
+  text-align: center;
+  padding: 0;
+  background: #359bed !important;
+}
+
+.social .portfolio a:before {
+  content: "\f0b1";
+  font-family: FontAwesome;
+}
+
+.social .portfolio a {
+  font-size: 16px;
+  display: inline-block !important;
+  text-align: center;
+  padding: 0;
+  background: #000000 !important;
 }
