@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        .product-slider {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .product-slider .product {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+            margin: 0 10px;
+            /* background-color: #f9f9f9; */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-slider .product img {
+            /* width: 182px;
+            height: 184px; */
+            width: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .product-info {
+            margin-top: 10px;
+        }
+
+        .product-name {
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .product-price {
+            color: #ff5722;
+            margin: 5px 0;
+        }
+
+        .product-discount {
+            color: #4caf50;
+            margin: 5px 0;
+        }
+
+        .add-to-cart-btn {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="product-slider">
+        <div class="product">
+            <img src="BLTDH17PT.jpg" alt="Product 1">
+            <div class="product-info">
+                <div class="product-name">Product 1</div>
+                <div class="product-price">Price: Rs 500</div>
+                <div class="product-discount">Discount: 10%</div>
+                <a href="#" class="add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product">
+            <img src="CHNRG15AC.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-name">Product 2</div>
+                <div class="product-price">Price: Rs 750</div>
+                <div class="product-discount">Discount: 15%</div>
+                <a href="#" class="add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product">
+            <img src="BLTDH17PT.jpg" alt="Product 1">
+            <div class="product-info">
+                <div class="product-name">Product 1</div>
+                <div class="product-price">Price: Rs 500</div>
+                <div class="product-discount">Discount: 10%</div>
+                <a href="#" class="add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product">
+            <img src="CHNRG15AC.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-name">Product 2</div>
+                <div class="product-price">Price: Rs 750</div>
+                <div class="product-discount">Discount: 15%</div>
+                <a href="#" class="add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product">
+            <img src="BLTDH17PT.jpg" alt="Product 1">
+            <div class="product-info">
+                <div class="product-name">Product 1</div>
+                <div class="product-price">Price: Rs 500</div>
+                <div class="product-discount">Discount: 10%</div>
+                <a href="#" class="add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product">
+            <img src="CHNRG15AC.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-name">Product 2</div>
+                <div class="product-price">Price: Rs 750</div>
+                <div class="product-discount">Discount: 15%</div>
+                <a href="#" class="add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product">
+            <img src="BLTDH17PT.jpg" alt="Product 1">
+            <div class="product-info">
+                <div class="product-name">Product 1</div>
+                <div class="product-price">Price: Rs 500</div>
+                <div class="product-discount">Discount: 10%</div>
+                <a href="#" class="add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product">
+            <img src="CHNRG15AC.jpg" alt="Product 2">
+            <div class="product-info">
+                <div class="product-name">Product 2</div>
+                <div class="product-price">Price: Rs 750</div>
+                <div class="product-discount">Discount: 15%</div>
+                <a href="#" class="add-to-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+        <!-- Add more product divs as needed -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.product-slider').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+</body>
+
+</html>
