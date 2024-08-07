@@ -28,16 +28,6 @@ slideInterval = setInterval(() => plusSlides(1), 5000); // Change image every 3 
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*===================================================================================*/
 // 	Featured Products START
 
