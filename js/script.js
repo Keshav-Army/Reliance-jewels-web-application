@@ -31,48 +31,62 @@ slideInterval = setInterval(() => plusSlides(1), 5000); // Change image every 3 
 /*===================================================================================*/
 // 	Featured Products START
 
-jQuery(document).ready(function () {
-  "use strict";
+let itemContainerElement = document.getElementById('slider');
+    let currentIndex = 0;
 
-  jQuery(function () {
-    var dragging = true;
-    var owlElementID = "#owl-main";
-
-    jQuery(".home-owl-carousel").each(function () {
-      var owl = $(this);
-      var itemPerLine = owl.data("item");
-      if (!itemPerLine) {
-        itemPerLine = 6;
-      }
-      owl.owlCarousel({
-        items: itemPerLine,
-        itemsDesktop: [1199, 4],
-        itemsTablet: [991, 3],
-        navigation: true,
-        pagination: false,
-
-        navigationText: ["", ""],
+    function renderItems() {
+      let innerHTML = '';
+      items.forEach((item) => {
+        innerHTML += `<div class="item-container">
+                            <img src="${item.item_image}" alt="" class="item-image">
+                            <div class="item-name">${item.item_name}</div>
+                            <div class="price">
+                                <span class="current-price">₹ ${item.current_price}</span>
+                                <span class="orginal-price">₹ ${item.orginal_price}</span>
+                                <span class="discount-price">(${item.discount_price}% OFF)</span>
+                            </div>
+                            <button class="btn-add-card">Add to Cart</button>
+                        </div>`;
       });
-    });
 
-    jQuery(".homepage-owl-carousel").each(function () {
-      var owl = $(this);
-      var itemPerLine = owl.data("item");
-      if (!itemPerLine) {
-        itemPerLine = 4;
+      itemContainerElement.innerHTML = innerHTML;
+    }
+
+    function slideItems() {
+      const totalWidth = itemContainerElement.scrollWidth;
+      const visibleWidth = document.querySelector('.slider-container').clientWidth;
+      const itemWidth = document.querySelector('.item-container').clientWidth;
+      const maxIndex = Math.floor(totalWidth / (itemWidth + 20)) - 4;
+
+      if (currentIndex > maxIndex) {
+        currentIndex = 0;
+      } else if (currentIndex < 0) {
+        currentIndex = maxIndex;
       }
-      owl.owlCarousel({
-        items: itemPerLine,
-        itemsTablet: [991, 3],
-        itemsDesktop: [1199, 4],
-        navigation: true,
-        pagination: false,
 
-        navigationText: ["", ""],
-      });
-    });
-  });
-});
+      const newTransform = `translateX(-${currentIndex * (itemWidth + 20)}px)`;
+      itemContainerElement.style.transform = newTransform;
+    }
+
+    function nextSlide() {
+      currentIndex++;
+      slideItems();
+    }
+
+    function prevSlide() {
+      currentIndex--;
+      slideItems();
+    }
+
+    document.getElementById('nextBtn').addEventListener('click', nextSlide);
+    document.getElementById('prevBtn').addEventListener('click', prevSlide);
+
+    // Auto slide
+    setInterval(nextSlide, 3000);
+
+    // Initial render
+    renderItems();
+    slideItems();
 
 // Featured Products END
 /*===================================================================================*/

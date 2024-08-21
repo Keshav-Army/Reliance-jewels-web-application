@@ -67,3 +67,148 @@
 }
 
 /* ===================SELECTION EFFECT END======================== */
+
+/* =======================================HOME : Featured Products Start=========================================================== */
+.slider-container {
+    position: relative;
+    width: 100%;
+    margin: 30px auto 50px;
+    overflow: hidden;
+    background-color: white;
+    padding: 50px 0px 10px 0px;
+    border-radius: 6px;
+}
+
+.items-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.item-container {
+    flex: 1 0 18%;
+    /* Approximately 5 items in a row (100% / 5) */
+    margin: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 4px;
+    max-width: 230px;
+    box-sizing: border-box;
+}
+
+.item-image {
+    width: 100%;
+    height: auto;
+}
+
+.item-name {
+    color: #212121;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: "Barlow", sans-serif;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+.price {
+    text-align: center;
+}
+
+.current-price {
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    margin-right: -2px;
+}
+
+.orginal-price {
+    text-decoration: line-through;
+    color: #d3d3d3;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 0 0 0 3px;
+}
+
+.discount-price {
+    color: #f00;
+    font-size: 12px;
+    margin: 0px 0 0 7px;
+    font-weight: 500;
+}
+
+.btn-add-card {
+    width: 80%;
+    margin: 0px 10%;
+    border: none;
+    background-color: rgba(52, 231, 52, 0.856);
+    color: white;
+    border-radius: 5px;
+    padding: 3px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-add-card:hover {
+    background-color: rgb(115, 225, 115);
+}
+
+.btn-add-card:active {
+    background-color: rgb(52, 231, 52);
+    color: white;
+    font-weight: 700;
+}
+
+/* Navigation buttons */
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-nav.left {
+    left: 0;
+    z-index: 2;
+}
+
+.slider-nav.right {
+    right: 0;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .item-container {
+        flex: 1 0 100%;
+        /* Show only one item per row on mobile */
+        max-width: 100%;
+        /* Ensure the item takes full width */
+    }
+
+    .slider-nav {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 500px) {
+    .item-container {
+        flex: 0 0 48%;
+        /* 2 items per row */
+    }
+
+    .slider-nav {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* ============================================ HOME : Featured Products END============================================================= */
