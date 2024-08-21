@@ -1,3 +1,27 @@
+/* TOP BAR FIXED=============== */
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f8f8f8 !important;
+}
+
+.header-style-1 .main-header {
+    padding-top: 47px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .header-style-1 .main-header {
+        padding-top: 87px;
+    }
+}
+
+/* TOP BAR FIXED END=============== */
+
+
+/* =================================== 4 Video Section START ===================================  */
 .video-part {
     position: relative;
     display: flex;
@@ -31,6 +55,10 @@
     color: wheat;
     font-weight: 800;
 }
+
+/* =================================== 4 Video Section END ===================================  */
+
+
 
 /* =================SIDE scroll bar START================= */
 /* width */
