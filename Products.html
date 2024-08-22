@@ -142,7 +142,10 @@
                     <div class="cnt-block">
                         <ul class="list-unstyled list-inline">
                             <li><a href="#"><i class="top_header_icon order_icon"></i><span>Order</span></a></li>
-                            <li><a href="#"><i class="top_header_icon mycart_icon"></i><span>My Cart</span></a></li>
+                            <li><a href="mycart.html"><i class="top_header_icon mycart_icon"></i>
+                                    <span class="bag-item-count">0</span>
+                                    <span class="my-cart-text">My Cart</span>
+                                </a></li>
                             <li><a href="#"><i class="top_header_icon logsign_icon"></i><span>Login / Signup</span></a>
                             </li>
                         </ul>
@@ -196,7 +199,7 @@
                                 <div class="nav-outer">
                                     <ul class="nav navbar-nav">
                                         <li><a href="index.html" data-hover="dropdown">HOME</a></li>
-                                        <li><a href="Products.html" data-hover="dropdown">PRODUCTS</a>
+                                        <li><a href="Products.html" data-hover="dropdown">ALL PRODUCTS</a>
                                         </li>
                                     </ul>
                                     <div class="clearfix"></div>
@@ -217,7 +220,42 @@
         </div>
     </main>
 
-    <!-- ================= FOOTER : START ===================================== -->
+
+    <!-- ============================================== FOOTER : START ============================================== -->
+    <!-- ================================================ FOOTER ================================================== -->
+
+    <div class="row contentMain" data-aos="zoom-in">
+        <div class="container">
+            <div class="col-md-12 col-sm-12">
+                <div class="contentBox">
+                    <h4>Reliance Jewels: A legacy Of Crafting Excellence</h4>
+                    <p>Reliance Jewels, ur premium jewellery showrooms present across the country offer the widest range
+                        of
+                        stunning design. At reliance Jewels, we practice transparent and ethical policies which
+                        guarantee purity,
+                        excellent quality and a pleasant shopping experience. whether it is the exchange policy or the
+                        buyback
+                        policy, you can rest assured about receiving the true value for money.</p>
+
+                    <h4>Why Shop at Reliance Jewels?</h4>
+                    <p>Reliance Jewels is The most spectacular jewellery collection oozing with diversity and splendour
+                        welcome
+                        you at Reliance Jewels. We offer a profuse mix of traditional and contemporary designs. Be it
+                        you, the
+                        senior members of your family or the little wonders, we have something gorgeous for everyone.
+                        Our assorted
+                        collections exhibit ornaments for special occasions as well as casual elegance. We don’t just
+                        make
+                        jewellery, we carve masterpieces. Therefore, any jewellery you choose will redefine your glory
+                        only to make
+                        it more brilliant..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <footer id="footer" class="footer color-bg">
 
         <div class="copyright-bar" data-aos="zoom-in">
@@ -327,42 +365,22 @@
                     Sharma</a>. </p>
         </div>
     </footer>
-    <!-- ================= FOOTER : END ===================================== -->
+    <!-- ============================================== FOOTER : END ============================================== -->
 
 
 
     <!-- product items -->
-    <script src="js/prduct-details/product.js"></script>
-
+    <script src="js/prduct-details/productitems.js"></script>
     <!-- Product script -->
-    <script>
-        let itemContainerElement = document.querySelector('.items-container');
+    <script src="js/prduct-details/productscript.js"></script>
 
-        let innerHTML = '';
-        items.forEach((item) => {
-            innerHTML += `<div class="item-container">
-                                            <img src="${item.item_image}" alt="" class="item-image">
-                                            <div class="item-name">${item.item_name}</div>
-                                            <div class="price">
-                                                <span class="current-price">₹ ${item.current_price}</span>
-                                                <span class="orginal-price">₹ ${item.orginal_price}</span>
-                                                <span class="discount-price">(${item.discount_price}% OFF)</span>
-                                            </div>
-                                            <button class="btn-add-card">Add to Card</button>
-                                         </div>`
-        });
-
-        itemContainerElement.innerHTML = innerHTML;
-
-
-    </script>
 
 
     <!-- JavaScripts placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
 
     <!-- On scrole Animtaion AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
