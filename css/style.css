@@ -11,7 +11,6 @@
     padding-top: 47px;
 }
 
-/* Media query for mobile devices */
 @media (max-width: 767px) {
     .header-style-1 .main-header {
         padding-top: 87px;
@@ -19,6 +18,31 @@
 }
 
 /* TOP BAR FIXED END=============== */
+
+/* ====================Add To Cart Start================ */
+.bag-item-count {
+    background-color: #f16565;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 18px;
+    padding: 1px 6px;
+    position: relative;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    left: -13px;
+    top: -9px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.my-cart-text {
+    margin-left: -13px;
+}
+
+/* ====================Add To Cart End================ */
+
+
 
 
 /* =================================== 4 Video Section START ===================================  */

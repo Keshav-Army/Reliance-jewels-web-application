@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.cart-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item,
+.cart-summary {
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.cart-item {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+  background-color: #fff;
+  border: 1px solid gainsboro;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.item-details {
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.item-details h5 {
+  font-size: 2rem !important;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.item-details .item-name {
+  text-align: left;
+  color: #212121;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Barlow", sans-serif;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.item-details .price {
+  text-align: left;
+}
+
+.item-details .current-price {
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  margin-right: -2px;
+}
+
+
+
+.item-details .orginal-price {
+  text-decoration: line-through;
+  color: #d3d3d3;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 14px;
+  margin: 0 0 0 3px;
+}
+
+.remove-item {
+  background-color: transparent;
+  border: none;
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+
+.cart-summary h5 {
+  margin-bottom: 20px;
+  font-size: 1.125rem;
+}
+
+.cart-summary hr {
+  border-color: #e9ecef;
+}
+
+.price-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.875rem;
+}
+
+.total-amount {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.btn-place-order {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #fc5567;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .cart-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .cart-item {
+    flex-basis: 65%;
+  }
+
+  .cart-summary {
+    flex-basis: 30%;
+    margin-bottom: 0;
+  }
+
+  .item-details h5 {
+    font-size: 1.125rem;
+  }
+
+  .item-details p,
+  .price-detail {
+    font-size: 1rem;
+  }
+
+  .btn-place-order {
+    font-size: 1.125rem;
+  }
+}
