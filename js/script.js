@@ -29,15 +29,15 @@ slideInterval = setInterval(() => plusSlides(1), 5000); // Change image every 3 
 
 
 /*===================================================================================*/
-// 	Featured Products On Home page START
+// 	Featured Products START
 
 let itemContainerElement = document.getElementById('slider');
-let currentIndex = 0;
+    let currentIndex = 0;
 
-function renderItems() {
-  let innerHTML = '';
-  items.forEach((item) => {
-    innerHTML += `<div class="item-container">
+    function renderItems() {
+      let innerHTML = '';
+      items.forEach((item) => {
+        innerHTML += `<div class="item-container">
                             <img src="${item.item_image}" alt="" class="item-image">
                             <div class="item-name">${item.item_name}</div>
                             <div class="price">
@@ -45,58 +45,48 @@ function renderItems() {
                                 <span class="orginal-price">₹ ${item.orginal_price}</span>
                                 <span class="discount-price">(${item.discount_price}% OFF)</span>
                             </div>
-                            <button class="btn-add-card" onclick="addToBag(${item.id})">Add to Cart</button>
+                            <button class="btn-add-card">Add to Cart</button>
                         </div>`;
-  });
+      });
 
-  itemContainerElement.innerHTML = innerHTML;
-}
+      itemContainerElement.innerHTML = innerHTML;
+    }
 
-function slideItems() {
-  const totalWidth = itemContainerElement.scrollWidth;
-  const visibleWidth = document.querySelector('.slider-container').clientWidth;
-  const itemWidth = document.querySelector('.item-container').clientWidth;
-  const maxIndex = Math.floor(totalWidth / (itemWidth + 20)) - 4;
+    function slideItems() {
+      const totalWidth = itemContainerElement.scrollWidth;
+      const visibleWidth = document.querySelector('.slider-container').clientWidth;
+      const itemWidth = document.querySelector('.item-container').clientWidth;
+      const maxIndex = Math.floor(totalWidth / (itemWidth + 20)) - 4;
 
-  if (currentIndex > maxIndex) {
-    currentIndex = 0;
-  } else if (currentIndex < 0) {
-    currentIndex = maxIndex;
-  }
+      if (currentIndex > maxIndex) {
+        currentIndex = 0;
+      } else if (currentIndex < 0) {
+        currentIndex = maxIndex;
+      }
 
-  const newTransform = `translateX(-${currentIndex * (itemWidth + 20)}px)`;
-  itemContainerElement.style.transform = newTransform;
-}
+      const newTransform = `translateX(-${currentIndex * (itemWidth + 20)}px)`;
+      itemContainerElement.style.transform = newTransform;
+    }
 
-function nextSlide() {
-  currentIndex++;
-  slideItems();
-}
+    function nextSlide() {
+      currentIndex++;
+      slideItems();
+    }
 
-function prevSlide() {
-  currentIndex--;
-  slideItems();
-}
+    function prevSlide() {
+      currentIndex--;
+      slideItems();
+    }
 
-document.getElementById('nextBtn').addEventListener('click', nextSlide);
-document.getElementById('prevBtn').addEventListener('click', prevSlide);
+    document.getElementById('nextBtn').addEventListener('click', nextSlide);
+    document.getElementById('prevBtn').addEventListener('click', prevSlide);
 
-// Auto slide
-setInterval(nextSlide, 3000);
+    // Auto slide
+    setInterval(nextSlide, 3000);
 
-// Initial render
-renderItems();
-slideItems();
+    // Initial render
+    renderItems();
+    slideItems();
 
-// Featured Products On Home page END
+// Featured Products END
 /*===================================================================================*/
-
-
-/*===================================================================================*/
-// Add TO Cart START
-
-
-
-// Add To Cart END
-/*===================================================================================*/
-
