@@ -1,3 +1,4 @@
+const CONVENIENCE_FEE = 99;
 // Here you have defined 
 let bagItemsObject;
 onLoad();
@@ -5,9 +6,12 @@ onLoad();
 function onLoad() {
     loadBagItemsObject();
     displayCartItems();
+    displayBagSummary();
 }
 // To bagItems Id first you have to change in object jha se aap pora object ki details la sako =================== 
 // Here you can use map function which give you array into diffrent array ===================
+//================================================================================================================================================================================================
+
 function loadBagItemsObject() {
     console.log(bagItems);
 
@@ -49,7 +53,7 @@ function generateOneItemHTML(item) {
 }
 
 // Now Remove Part with the help of filter method ================================================================
-
+//================================================================================================================================================================================================
 function removeFromBagBtn(itemId) {
     bagItems = bagItems.filter(bagItemId => bagItemId != itemId);
     //set item in the local storage
@@ -57,4 +61,45 @@ function removeFromBagBtn(itemId) {
     loadBagItemsObject();
     displayBagIcon();
     displayCartItems();
+    displayBagSummary();
+}
+
+// Now Bag Summary Part Update ================================================================
+//================================================================================================================================================================================================
+
+function displayBagSummary() {
+    let totalItems = bagItemsObject.length;
+    let totalMRP = 0;
+    let totalDiscount = 0;
+
+    bagItemsObject.forEach(bagItems => {
+        totalMRP += bagItems.orginal_price;
+        totalDiscount += bagItems.orginal_price - bagItems.current_price;
+    });
+
+    let finelPayment = totalMRP - totalDiscount + CONVENIENCE_FEE;
+
+    let bagSummaryElement = document.querySelector('.cart-summary');
+    bagSummaryElement.innerHTML = `<div class="bag-summary-details">
+                                        <h5>PRICE DETAILS (${totalItems} Items)</h5>
+                                        <hr>
+                                        <div class="price-detail">
+                                            <p>Total MRP</p>
+                                            <p>₹${totalMRP}</p>
+                                        </div>
+                                        <div class="price-detail">
+                                            <p>Discount on MRP</p>
+                                            <p style="color: green;">-₹${totalDiscount}</p>
+                                        </div>
+                                        <div class="price-detail">
+                                            <p>Convenience Fee</p>
+                                            <p>₹${CONVENIENCE_FEE}</p>
+                                        </div>
+                                        <hr>
+                                        <div class="price-detail total-amount">
+                                            <p>Total Amount</p>
+                                            <p>₹${finelPayment}</p>
+                                        </div>
+                                        <button class="btn-place-order">PLACE ORDER</button>
+                                    </div>`;
 }
