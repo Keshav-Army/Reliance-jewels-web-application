@@ -121,13 +121,28 @@
 /* ===================SELECTION EFFECT END======================== */
 
 /* =======================================HOME : Featured Products Start=========================================================== */
+
+.featured-products-headline {
+    color: #7c7993;
+    margin: 0 0 10px 15px;
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+.slider-container hr {
+    margin: 0;
+}
+
+
 .slider-container {
     position: relative;
     width: 100%;
     margin: 30px auto 50px;
     overflow: hidden;
     background-color: white;
-    padding: 50px 0px 10px 0px;
+    padding: 30px 0px 10px 0px;
     border-radius: 6px;
 }
 

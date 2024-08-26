@@ -344,9 +344,7 @@
     padding: 13px 5px;
   }
 
-  .topPositon {
-    /*position: absolute; top:1.1em; right:1.2em;*/
-  }
+
 
   /*  .m-item {width:48% !important; float: left !important;}
   .product-slider .products {width:100%; float:left;}*/
@@ -852,7 +850,7 @@
   }
 
   .top-bar .header-top-inner .cnt-block .list-inline li {
-    margin: 0px 0;
+    margin: 0px 10px;
   }
 
   .top-bar .cnt-account {
@@ -1044,9 +1042,6 @@
     width: auto;
   }
 
-  .hot-deals .products {
-    /*margin-right:15px*/
-  }
 
   .m-t-20 {
     margin-top: 20px;
@@ -1461,7 +1456,7 @@
   }
 
 
-  .wide-banner .image img {}
+
 
   .wide-banners.wow.fadeInUp.outer-bottom-xs.animated {
     margin-bottom: 0px;
@@ -2379,7 +2374,7 @@
 .product-feature-details .social-share-buttons ul li:hover a.pinterest {
   background-color: #BD081B;
 }
-}
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .product-feature-details .social-share-buttons ul li a {
