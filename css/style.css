@@ -7,6 +7,11 @@
     background-color: #f8f8f8 !important;
 }
 
+.top-bar .container {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .header-style-1 .main-header {
     padding-top: 47px;
 }
