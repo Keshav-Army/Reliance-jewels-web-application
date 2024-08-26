@@ -6,8 +6,8 @@ function onLoad() {
     loadBagItemsObject();
     displayCartItems();
 }
-// To bagItems Id first you have to change in object jha se aap pora object ki details la sako
-// Here you can use map function which give you array into diffrent array
+// To bagItems Id first you have to change in object jha se aap pora object ki details la sako =================== 
+// Here you can use map function which give you array into diffrent array ===================
 function loadBagItemsObject() {
     console.log(bagItems);
 
@@ -18,7 +18,7 @@ function loadBagItemsObject() {
             }
         }
     })
-    // console.log(bagItemsObject) here pora object print hoga id ke bace pe
+    // console.log(bagItemsObject) here pora object print hoga id ke bace pe ===================
 }
 
 function displayCartItems() {
@@ -42,8 +42,19 @@ function generateOneItemHTML(item) {
                                                 <span class="discount-price">(${item.discount_price}% OFF)</span>
                                             </div>
                                             <p class="text-muted">14 days return available</p>
-                                            <p class="text-muted">Delivery by <strong>10 Oct 2023</strong></p>
+                                            <p class="text-muted">Delivery by <strong>10 Oct 2024</strong></p>
                                         </div>
-                                        <button class="remove-item">&times;</button>
+                                        <button class="remove-item" onclick="removeFromBagBtn(${item.id})">&times;</button>
                                     </div>`
+}
+
+// Now Remove Part with the help of filter method ================================================================
+
+function removeFromBagBtn(itemId) {
+    bagItems = bagItems.filter(bagItemId => bagItemId != itemId);
+    //set item in the local storage
+    localStorage.setItem('BagItems', JSON.stringify(bagItems));
+    loadBagItemsObject();
+    displayBagIcon();
+    displayCartItems();
 }
